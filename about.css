@@ -27,9 +27,13 @@ body {
   padding: 10px;
 }
 
+body > h2 {
+  font-size: 30px;
+}
+
 .dash {
   width: 50%;
-  height: 5px;
+  height: 3px;
   background-color: black;
   border-radius: 5px;
 }
@@ -69,7 +73,11 @@ body {
 @media screen and (min-width: 768px) {
   body {
     display: grid;
-    grid-template: 0.2fr 1fr 0.1fr 0.2fr 0.6fr 0.1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 0.2fr 1fr 0.1fr 0.2fr 0.2fr 0.1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url(./Images/background/1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .logo {
@@ -78,12 +86,16 @@ body {
     width: 50%;
     height: auto;
     justify-self: center;
+    margin: 1px;
+    margin-top: 10px;
   }
 
   body > h1 {
     grid-column: 2/7;
     grid-row: 1;
-    font-size: 40px;
+    font-size: 30px;
+    justify-self: left;
+    margin: 1px;
   }
 
   .intro {
@@ -92,6 +104,7 @@ body {
     justify-self: center;
     width: 95%;
     height: auto;
+    margin: 1px;
   }
 
   body > h2 {
@@ -99,6 +112,7 @@ body {
     grid-column: 1/7;
     justify-self: center;
     font-size: 40px;
+    margin: 1px;
   }
 
   .titles {
@@ -106,8 +120,10 @@ body {
     grid-row: 4;
     grid-column: 1/7;
     width: 95%;
-    height: 70%;
+    height: 95%;
     justify-self: center;
+    margin: 1px;
+    padding: 1px;
   }
 
   .container {
@@ -129,6 +145,7 @@ body {
     grid-row: 5;
     grid-column: 1/7;
     justify-self: center;
+    margin: 1px;
   }
 
   .dash {
@@ -137,6 +154,8 @@ body {
 
   h3 {
     justify-self: center;
-    background-color: aqua;
+    grid-row: 6;
+    grid-column: 1/7;
+    margin: 1px;
   }
 }
