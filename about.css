@@ -9,8 +9,8 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 1px;
+  padding: 1px;
 }
 
 .logo {
@@ -28,10 +28,10 @@ body {
 }
 
 .dash {
-    width: 50%;
-    height: 5px;
-    background-color: black;
-    border-radius: 5px;
+  width: 50%;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .titles {
@@ -62,36 +62,36 @@ body {
 }
 
 .names {
-    width: 90%;
-    text-align: center;
+  width: 90%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   body {
-  display: grid;
-  grid-template: 0.2fr 1fr 0.1fr 0.2fr 0.6fr 0.1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template: 0.2fr 1fr 0.1fr 0.2fr 0.6fr 0.1fr/1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .logo {
-  grid-column: 1;
-  grid-row: 1;
-  width: 50%;
-  height: auto;
-  justify-self: center;
+    grid-column: 1;
+    grid-row: 1;
+    width: 50%;
+    height: auto;
+    justify-self: center;
   }
 
   body > h1 {
-  grid-column: 2/7;
-  grid-row: 1;
-  font-size: 40px;
+    grid-column: 2/7;
+    grid-row: 1;
+    font-size: 40px;
   }
 
   .intro {
-  grid-row: 2;
-  grid-column: 1/7;
-  justify-self: center;
-  width: 95%;
-  height: auto;
+    grid-row: 2;
+    grid-column: 1/7;
+    justify-self: center;
+    width: 95%;
+    height: auto;
   }
 
   body > h2 {
@@ -111,14 +111,14 @@ body {
   }
 
   .container {
-      width: 16%;
-      height: 90%;
-      justify-content: center;
+    width: 16%;
+    height: 90%;
+    justify-content: center;
   }
 
   .title {
-      width: 70%;
-      height: 80%;
+    width: 70%;
+    height: 80%;
   }
 
   .container > h2 {
@@ -132,12 +132,12 @@ body {
   }
 
   .dash {
-      display: none;
+    display: none;
   }
 
   h3 {
-      justify-self: center;
-      background-color: aqua;
+    justify-self: center;
+    background-color: aqua;
   }
 
 }
