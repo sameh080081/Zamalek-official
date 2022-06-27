@@ -1,0 +1,161 @@
+.font {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1px;
+  padding: 1px;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.intro {
+  width: 90%;
+  text-align: center;
+  border: 2px double red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+body > h2 {
+  font-size: 30px;
+}
+
+.dash {
+  width: 50%;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container > h2 {
+  font-size: 18px;
+}
+
+.title {
+  width: 60%;
+  height: auto;
+}
+
+.names {
+  width: 90%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template: 0.2fr 1fr 0.1fr 0.2fr 0.2fr 0.1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url(./Images/background/1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    margin: 1px;
+    margin-top: 10px;
+  }
+
+  body > h1 {
+    grid-column: 2/7;
+    grid-row: 1;
+    font-size: 30px;
+    justify-self: left;
+    margin: 1px;
+  }
+
+  .intro {
+    grid-row: 2;
+    grid-column: 1/7;
+    justify-self: center;
+    width: 95%;
+    height: auto;
+    margin: 1px;
+  }
+
+  body > h2 {
+    grid-row: 3;
+    grid-column: 1/7;
+    justify-self: center;
+    font-size: 40px;
+    margin: 1px;
+  }
+
+  .titles {
+    flex-direction: row;
+    grid-row: 4;
+    grid-column: 1/7;
+    width: 95%;
+    height: 95%;
+    justify-self: center;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .container {
+    width: 16%;
+    height: 90%;
+    justify-content: center;
+  }
+
+  .title {
+    width: 70%;
+    height: 80%;
+  }
+
+  .container > h2 {
+    font-size: 13px;
+  }
+
+  .names {
+    grid-row: 5;
+    grid-column: 1/7;
+    justify-self: center;
+    margin: 1px;
+  }
+
+  .dash {
+    display: none;
+  }
+
+  h3 {
+    justify-self: center;
+    grid-row: 6;
+    grid-column: 1/7;
+    margin: 1px;
+  }
+}
